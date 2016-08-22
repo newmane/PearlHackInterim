@@ -1,0 +1,260 @@
+/*@fontimport url('http://fonts.googleapis.com/css?family=Fira+Sans:300');*/
+@import url('http://fonts.googleapis.com/css?family=Didact+Gothic');
+
+/* Little Miss Priss font import */
+@font-face {
+    font-family: 'LMP';
+    src: url('littlemisspriss-webfont.eot');
+    src: url('littlemisspriss-webfont.eot?#iefix') format('embedded-opentype'),
+         url('littlemisspriss-webfont.woff2') format('woff2'),
+         url('littlemisspriss-webfont.woff') format('woff'),
+         url('littlemisspriss-webfont.ttf') format('truetype'),
+         url('littlemisspriss-webfont.svg#littlemissprissmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fira-sans.ultralight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'LMP', sans-serif;
+  font-size: 18px;
+  background: black;;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'LMP', sans-serif;
+  letter-spacing: 2px;
+}
+
+strong {
+    font-size: 1.7em;
+    font-family: 'LMP', sans-serif;
+    color: #ce4e6d;
+    letter-spacing: 2px;
+    line-height: 1em;
+}
+
+header {
+  height: auto;
+  max-height: 1072px;
+  min-height: 450px;
+  width: 100%;
+}
+header.full-height > .jumbotron {
+  height: inherit;
+  max-height: inherit;
+  min-height: inherit;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: radial-gradient(#151A51,#000029,#040510,#000000);
+}
+
+#pearlHacks{
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;;
+  z-index: 4;
+  top: 20%;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#pearlHacks p {
+  font-family: 'LMP';
+}
+
+#pearlHacks a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.9em;
+  line-height: 0;
+}
+
+#pearlHacks a:hover{
+  text-decoration: none;
+  text-shadow: 3px 3px 12px #F2BB60;
+  color: inherit;
+  font-weight: bold;
+}
+
+img#ariel{
+  /*max-width: 330px;
+  max-height: 350px;*/
+  height: auto;
+  max-width: 250px;
+  width: 50%;
+  margin: auto;
+  z-index: 5;
+  margin-top:2%;
+  -webkit-animation: pulsate 2s ease-out;
+ -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-filter: drop-shadow(0px 0px 12px #fff6e9)}
+    50% {-webkit-filter: drop-shadow(0px 0px 7px #FFEFDA)}
+    100% {-webkit-filter: drop-shadow(0px 0px 12px white)}
+}
+
+/*#ariel:hover8
+    -webkit-filter: drop-shadow(0px 0px 20px #fff6e9);
+}*/
+  @media screen and (max-width: 500px) {
+   .ariel{
+     background-size: 150px 154px;
+     height: 154px;
+     width: 150px;
+     z-index: 5;
+   }
+  }
+
+#invitation {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'LMP';
+    border: solid #CE4E6D 7px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #C75773;
+}
+
+div#content.container
+{
+  margin-top: 0px;
+}
+
+#invitation p
+{
+  margin: 0 0 2px;
+}
+
+#invitation .big {
+  font-size: 2rem;
+}
+
+#invitation .btn{
+  background-color: #CE4E6D;
+}
+
+#invitation .col-xs-8, #invitation .col-xs-offset-2 {
+  float: none;
+}
+
+#invitation img:first-child {
+  margin-bottom: -10%;
+}
+
+#invitation img {
+  width: 80%;
+  margin: auto;
+}
+
+#invitation img:last-child {
+  margin-top: -15%;
+}
+
+#invitation .content {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.jumbotron {
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.25);
+  z-index: 10;
+}
+
+.mid h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 15rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.participant img
+{
+  filter: contrast(1);
+  -webkit-filter: contrast(1);
+  -moz-filter: contrast(1);
+  -o-filter: contrast(1);
+  -ms-filter: contrast(1);
+}
+
+.participant img:hover
+{
+  filter: contrast(0.3);
+  -webkit-filter: opacity(30%);
+  -moz-filter: contrast(0.3);
+  -o-filter: contrast(0.3);
+  -ms-filter: contrast(0.3);
+  opacity: 1;
+}
+
+#partipant-text
+{
+  font-family:Helvetica;
+  font-weight:900;
+  color:rgba(255,255,255,.85);
+  font-size:40px;
+}
+
+#mlh-trust-badge {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  max-width: 80px;
+  width: 10%;
+  min-width: 60px;
+  z-index: 20;
+}
+
+#nav.affix-top {
+  z-index: 666;
+}
+#nav.affix {
+  top: 0;
+  border-width: 0 0 1px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 667;
+}
+
+#welcome p{
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+ p {
+  font-size: 1.1em;
+  letter-spacing: 3px;
+}
+
+.panel-body{
+  font-size: 1.4rem;
+}
+
+#faq h2{
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  font-size: 1.9em;
+  color: #ce4e6d;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
